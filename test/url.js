@@ -16,12 +16,12 @@ const sequelize = new Sequelize('sebs', 'sebs', null, {
   });
 
 
-const Urls = require('../model/urls.js')(sequelize);
-const Links = require('../model/links.js')(sequelize);
-const Images = require('../model/images.js')(sequelize);
-const UrlsImages = require('../model/urls-images.js')(sequelize);
-const Meta = require('../model/meta.js')(sequelize);
-const TextExtracts = require('../model/text-extracts.js')(sequelize);
+const Urls = require('../oldmodel/urls.js')(sequelize);
+const Links = require('../oldmodel/links.js')(sequelize);
+const Images = require('../oldmodel/images.js')(sequelize);
+const UrlsImages = require('../oldmodel/urls-images.js')(sequelize);
+const Meta = require('../oldmodel/meta.js')(sequelize);
+const TextExtracts = require('../oldmodel/text-extracts.js')(sequelize);
 describe('Urls', ()=>{
     var urls;
     beforeEach(()=>{
