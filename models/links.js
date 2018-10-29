@@ -4,7 +4,6 @@ module.exports = (sequelize, DataTypes) => {
   const Urls = require('./urls')(sequelize, DataTypes);
 
   const Links = sequelize.define('Links', {
-    url: DataTypes.STRING,
     from_urls_id: {
       type: DataTypes.INTEGER,
       references: {

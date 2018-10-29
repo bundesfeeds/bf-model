@@ -8,8 +8,17 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      url: {
-        type: Sequelize.STRING
+      from_urls_id: {
+        allowNull: false,
+        type: Sequelize.INTEGER
+      },
+      to_images_id: {
+        allowNull: false,
+        type: Sequelize.INTEGER
+      },
+      created: {
+        allowNull: false,
+        type: Sequelize.DATE
       },
       createdAt: {
         allowNull: false,
