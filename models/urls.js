@@ -2,9 +2,12 @@
 module.exports = (sequelize, DataTypes) => {
 
   const Urls = sequelize.define('Urls', {
-    id: { type: Sequelize.INTEGER, primaryKey: true },
-    url: Sequelize.STRING,
-    created: Sequelize.DATE
+    id: { 
+      type: DataTypes.INTEGER, 
+      primaryKey: true 
+    },
+    url: DataTypes.STRING,
+    created: DataTypes.DATE
   }, {
 
   });
